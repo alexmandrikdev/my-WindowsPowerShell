@@ -11,6 +11,14 @@ Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
 Set-PSReadLineOption -ShowToolTips
 Set-PSReadLineOption -PredictionSource History
 
+# Aliases
+Set-Alias a PHP-ARTISAN
+
+# Functions
+function PHP-ARTISAN ($P1, $P2, $P3, $P4, $P5, $P6) {
+    php artisan $P1, $P2, $P3, $P4, $P5, $P6
+}
+
 function Install-ModulesForWork(){
     # For autocompletion
     Install-Module PSReadLine;
