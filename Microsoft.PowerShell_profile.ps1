@@ -10,6 +10,7 @@ Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
 
 Set-PSReadLineOption -ShowToolTips
 Set-PSReadLineOption -PredictionSource History
+Set-PSReadlineOption -EditMode vi
 
 # Aliases
 Set-Alias a PHP-ARTISAN
