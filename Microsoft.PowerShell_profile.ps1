@@ -53,7 +53,8 @@ function Start-Processes() {
     "C:\Program Files (x86)\QTranslate\QTranslate.exe",
     "C:\Program Files (x86)\Microsoft\Skype for Desktop\Skype.exe",
     "C:\Users\Alex\AppData\Roaming\Telegram Desktop\Telegram.exe",
-    "C:\Users\Alex\AppData\Local\Programs\upwork\Upwork.exe"
+    "C:\Users\Alex\AppData\Local\Programs\upwork\Upwork.exe",
+    "C:\Users\Alex\AppData\Local\slack\slack.exe"
 
     foreach ($FilePath in $FilePaths) {
         $ProcessName = Get-FileName-From-Path -Path $FilePath
