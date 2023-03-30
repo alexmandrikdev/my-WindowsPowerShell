@@ -12,6 +12,9 @@ Set-PSReadLineOption -ShowToolTips
 Set-PSReadLineOption -PredictionSource History
 Set-PSReadlineOption -EditMode vi
 
+# Git autocomplete
+Import-Module posh-git
+
 # Aliases
 Set-Alias a PHP-ARTISAN
 
@@ -23,6 +26,9 @@ function PHP-ARTISAN ($P1, $P2, $P3, $P4, $P5, $P6) {
 function Install-Modules() {
     # For autocompletion
     Install-Module PSReadLine;
+
+    # For git autocomplete
+    PowerShellGet\Install-Module posh-git -Scope CurrentUser -Force
 }
 
 function Start-Processes() {
