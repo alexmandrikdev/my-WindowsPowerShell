@@ -19,8 +19,8 @@ Import-Module posh-git
 Set-Alias a PHP-ARTISAN
 
 # Functions
-function PHP-ARTISAN ($P1, $P2, $P3, $P4, $P5, $P6) {
-    php artisan $P1, $P2, $P3, $P4, $P5, $P6
+function PHP-ARTISAN () {
+    php artisan @args
 }
 
 function Install-Modules() {
