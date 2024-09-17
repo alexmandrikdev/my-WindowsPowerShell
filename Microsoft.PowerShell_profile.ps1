@@ -50,17 +50,20 @@ function Start-Processes() {
 
     $TempFile = New-TemporaryFile;
 
-    $FilePaths = "C:\laragon\laragon.exe",
+    $FilePaths = "D:\Programming\laragon\laragon.exe",
     "C:\Program Files\PowerToys\PowerToys.exe",
-    "C:\Users\Alex\AppData\Local\Programs\height-electron\Height.exe",
-    "C:\Users\Alex\AppData\Local\Programs\Microsoft VS Code\Code.exe",
+    # "C:\Users\Alex\AppData\Local\Programs\height-electron\Height.exe",
+    # "C:\Users\Alex\AppData\Local\Programs\Microsoft VS Code\Code.exe",
+    "D:\Program Files\PhpStorm 2023.3.4\bin\phpstorm64.exe",
     "C:\Program Files\Firefox Developer Edition\firefox.exe",
-    "C:\Users\Alex\AppData\Local\Grammarly\DesktopIntegrations\Grammarly.Desktop.exe",
+    "C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe",
+#    "C:\Users\Alex\AppData\Local\Grammarly\DesktopIntegrations\Grammarly.Desktop.exe",
     "C:\Program Files (x86)\QTranslate\QTranslate.exe",
     "C:\Program Files (x86)\Microsoft\Skype for Desktop\Skype.exe",
     "C:\Users\Alex\AppData\Roaming\Telegram Desktop\Telegram.exe",
-    "C:\Users\Alex\AppData\Local\Programs\upwork\Upwork.exe",
-    "C:\Users\Alex\AppData\Local\slack\slack.exe"
+    "C:\Program Files\Clockify\ClockifyWindows.exe"
+    # "C:\Users\Alex\AppData\Local\Programs\Everhour Screenshots\Everhour Screenshots.exe"
+    # "C:\Users\Alex\AppData\Local\slack\slack.exe"
 
     foreach ($FilePath in $FilePaths) {
         $ProcessName = Get-FileName-From-Path -Path $FilePath
